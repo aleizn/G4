@@ -11,9 +11,9 @@ teks += `┣👻 @${mem.id.split('@')[0]}\n`}
 teks += `└𝐓𝐄𝐀𝐌 𝐆𝟒`
 conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
 }
-handler.help = ['tagall <mesaje>','invocar <mesaje>']
+handler.help = ['tagall <mesaje>','invocar <mesaje>','g4 <mesaje>']
 handler.tags = ['group']
-handler.command = /^(tagall|invocar|invocacion|todos|invocación)$/i
+handler.command = /^(tagall|invocar|invocacion|g4|invocación)$/i
 handler.admin = true
 handler.group = true
 export default handler
